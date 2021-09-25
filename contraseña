@@ -1,0 +1,35 @@
+package contraseña;
+
+import java.util.Scanner;
+
+public class Contraseña
+{
+
+        public static void main(String[] args) 
+        {
+        String contraseña = "encargado", intento = "";
+        int cont = 0, bandera = 0;
+        Scanner teclado = new Scanner(System.in);
+    
+            do
+            {
+                System.out.println("Ingresa la contraseña: ");
+                intento = teclado.nextLine();
+                if (contraseña.equals(intento))
+                {
+                    System.out.println("Acceso permitido");
+                    bandera = 1;
+                }
+                else
+                {
+                    System.out.println("Contraseña incorrecta");
+                    System.out.println("");
+                    cont++;
+                    if (cont == 3)
+                    {
+                    System.out.println("Acceso denegado");
+                    }
+                }
+            } while ((cont != 3) && bandera==0);
+        }
+}
