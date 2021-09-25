@@ -1,0 +1,33 @@
+
+package menuclase;
+
+//me estan pidiendo la clase menu con 3 productos y 2 proveedores
+class Menu
+{
+    String producto; //revisada
+    String proveedor; 
+    int IDProducto; 
+    int IDProveedor; 
+}
+
+public class MenuClase 
+{
+    //aqui en el metodo estoy creando los 3 productos y 2 proveedores, no se si eso deba hacerlo solo en la "class Menu"
+    public static void main(String[] args) 
+    {
+        Menu producto1=new Menu();
+        producto1.producto="Jeans";
+        
+        Menu producto2=new Menu();
+        producto2.producto="Chamarra";
+        
+        Menu producto3=new Menu();
+        producto3.producto="Camisa";
+        
+        Menu proveedor1=new Menu();
+        proveedor1.proveedor="Wrangler";
+        
+        Menu proveedor2=new Menu();
+        proveedor2.proveedor="Levis";
+    }
+}
