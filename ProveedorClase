@@ -1,0 +1,35 @@
+
+package proveedorclase;
+
+//las habia declarado con este tipo de variable, pero Java me marcaba error
+    /*
+    int IDProveedor; //revisada
+    char nombre; //revisada
+    String contacto; //revisada
+    String direccion; //revisada
+    int telefono;  //revisada
+    */
+    
+//me estan pidiendo la clase proveedor con estos datos
+class Proveedor
+{
+    String IDProveedor; //Ej: 4263455
+    String nombre; //Nombre del proveedor Ej: Puma
+    String contacto; //Nombre del contacto Ej: Luis Flores
+    String direccion; 
+    String telefono;  
+}
+
+public class ProveedorClase 
+{
+   //aqui en el metodo estoy creando un ejemplo de Proveedor, no se si eso deba hacerlo solo en la "class Proveedor"
+    public static void main(String[] args) 
+    {
+        Proveedor proveedor1=new Proveedor();
+        proveedor1.IDProveedor="567965";
+        proveedor1.nombre="Wrangler";
+        proveedor1.contacto="Luis Flores";
+        proveedor1.direccion="8579 Vernon Rd.";
+        proveedor1.telefono="55224433";
+    }
+}
