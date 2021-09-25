@@ -1,0 +1,61 @@
+
+package menu;
+
+import java.util.Scanner;
+
+public class Menu 
+{
+
+    public static void main(String[] args) 
+    {
+        Scanner sn = new Scanner(System.in);
+        
+        boolean salir = false;
+        int opcion;
+        
+        
+        while(!salir) 
+        {
+            System.out.println("\nElige una opción:");
+            System.out.println("1. Encargado.");
+            System.out.println("2. Cliente.");
+            System.out.println("3. Salir.");
+            opcion = sn.nextInt();
+            
+            switch(opcion)
+            {
+                case 1:
+                    System.out.println("\n-Encargado-");
+                    System.out.println("\nElige una opción:");
+                    System.out.println("1. Crear los descuentos para los ID de producto.");
+                    System.out.println("2. Generar un reporte de ventas.");
+                    System.out.println("3. Establecer los precios.");
+                    System.out.println("4. Ver lista de productos.");
+                    System.out.println("5. Salir.");
+                    opcion = sn.nextInt();
+                    salir=true;
+                    break;
+                
+                case 2:
+                    System.out.println("\n-Cliente-");
+                    System.out.println("\nElige una opción:");
+                    System.out.println("1. Ver precio de un producto.");
+                    System.out.println("2. Aplicar promocion.");
+                    System.out.println("3. Salir.");
+                    opcion = sn.nextInt();
+                    salir=true;
+                    break;
+                
+                case 3:
+                    salir=true;
+                    break;
+                default:
+                    System.out.println("*Esa opción no existe*");
+                    
+            }
+            
+        }
+        
+    }
+    
+}
