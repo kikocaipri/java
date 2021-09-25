@@ -1,0 +1,48 @@
+
+package metodosparaencargado;
+        
+import java.util.Scanner;
+
+//este metodo ya no lo segui haciendo bro, pero la idea era hacer algo asi
+//el chiste es meter un ID de producto y poderle cambiar el precio
+public void EstablecerPrecio()
+    {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Introduce el ID del producto: " + devolverNombre() + " : ");
+        IDProducto = teclado.nextInt();
+    }
+
+
+//el metodo para la promocion del 15% y el 25% hice algo asi
+public void Promocion()
+{
+    System.out.println("Ingrese el ID del producto: ");
+    int num = sc.nextInt(); //para leer un dato de tipo int.
+
+    //calculos
+    int valor = num ;
+    int descuento = 0;
+    if(num < 5)
+        {
+            descuento = (int) (valor * 0.1);
+        }
+        else if(num >= 5 && num < 10)
+            {
+                descuento = (int) (valor * 0.15);
+            }
+        else
+            {
+                descuento = (int) (valor * 0.25);
+            }
+    //resultados
+    System.out.println("El valor a pagar es: " + (valor - descuento));
+}
+
+
+
+//piden otro metodo que "Gire una orden", se me ocurre que sea algo muy sencillo que imprima datos, algo asi como "ID Cliente + ID de Producto = Orden #..."
+//lo podemos omitir no hay bronca
+
+
+//y piden un ultimo metodo que genere una lista total precios, aqui yo pensaba que de los tres productos el sistema imprima en pantalla los precios de los tres
+
