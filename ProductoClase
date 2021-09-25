@@ -1,0 +1,25 @@
+
+package productoclase;
+
+//me estan pidiendo la clase producto con estos datos
+//estos son los tipos de variable que elegi, si no las pongo todas en String, Netbeans me marca error no se porque.
+
+class Producto
+{
+    int IDProducto; 
+    char nombre; //Nombre del producto
+    float precio; 
+    int cantidaddisponible; 
+}
+
+public class ProductoClase 
+{
+    public static void main(String[] args) 
+    {
+        Producto producto1=new Producto();
+        producto1.IDProducto="123456";
+        producto1.nombre="Jeans";
+        producto1.precio="1200.25";
+        producto1.cantidaddisponible="300";
+    }
+}
