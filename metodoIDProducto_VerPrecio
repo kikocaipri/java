@@ -1,0 +1,29 @@
+/*
+c)CLIENTE
+Aqui me estan pidiendo un metodo, lo que se pretende es que el usuario ingrese el IDProducto y el sistema arroja el Precio
+*/
+package idproductoverprecio;
+
+import java.util.Scanner;
+
+public class IDProductoVerPrecio 
+{
+    int IDProducto=123456;
+    float precio=1200.25;
+    
+    public IDProductoVerPrecio()
+    {
+        solicitarIDProducto();
+    }
+    
+    //Este es mi metodo, pero supongo que los datos los debe extraer el sistema de las otras clases
+    //No supe como hacerle bro
+    public static void solicitarIDProducto() 
+    {
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Introduce el ID del producto: ");
+        IDProducto = teclado.nextLine();
+        return precio;
+        System.out.println("Su precio es: " + precio);
+    }
+}
